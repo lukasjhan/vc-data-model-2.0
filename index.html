@@ -1747,7 +1747,7 @@ if that is not possible.
   </p><p>
                       This document is governed by the
                       <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20231103/">03 November 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">요약</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>소개</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#what-is-a-verifiable-credential"><bdi class="secno">1.1 </bdi>검증가능한 크리덴셜이란 무엇인가?</a></li><li class="tocline"><a class="tocxref" href="#ecosystem-overview"><bdi class="secno">1.2 </bdi>생태계 개요</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1.3 </bdi>적합성</a></li></ol></li><li class="tocline"><a class="tocxref" href="#terminology"><bdi class="secno">2. </bdi>용어</a></li><li class="tocline"><a class="tocxref" href="#core-data-model"><bdi class="secno">3. </bdi>핵심 데이터 모델</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#claims"><bdi class="secno">3.1 </bdi>클레임</a></li><li class="tocline"><a class="tocxref" href="#credentials"><bdi class="secno">3.2 </bdi>크리덴셜</a></li><li class="tocline"><a class="tocxref" href="#presentations"><bdi class="secno">3.3 </bdi>프레젠테이션</a></li></ol></li><li class="tocline"><a class="tocxref" href="#basic-concepts"><bdi class="secno">4. </bdi>기본 개념</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#getting-started"><bdi class="secno">4.1 </bdi>시작하기</a></li><li class="tocline"><a class="tocxref" href="#verifiable-credentials"><bdi class="secno">4.2 </bdi>검증가능한 크리덴셜</a></li><li class="tocline"><a class="tocxref" href="#contexts"><bdi class="secno">4.3 </bdi>컨텍스트</a></li><li class="tocline"><a class="tocxref" href="#identifiers"><bdi class="secno">4.4 </bdi>식별자</a></li><li class="tocline"><a class="tocxref" href="#types"><bdi class="secno">4.5 </bdi>타입</a></li><li class="tocline"><a class="tocxref" href="#names-and-descriptions"><bdi class="secno">4.6 </bdi>이름과 설명</a></li><li class="tocline"><a class="tocxref" href="#issuer"><bdi class="secno">4.7 </bdi>발급자</a></li><li class="tocline"><a class="tocxref" href="#credential-subject"><bdi class="secno">4.8 </bdi>크리덴셜 주체</a></li><li class="tocline"><a class="tocxref" href="#validity-period"><bdi class="secno">4.9 </bdi>유효 기간</a></li><li class="tocline"><a class="tocxref" href="#status"><bdi class="secno">4.10 </bdi>상태</a></li><li class="tocline"><a class="tocxref" href="#data-schemas"><bdi class="secno">4.11 </bdi>데이터 스키마</a></li><li class="tocline"><a class="tocxref" href="#securing-mechanisms"><bdi class="secno">4.12 </bdi>보안 메커니즘</a></li><li class="tocline"><a class="tocxref" href="#verifiable-presentations"><bdi class="secno">4.13 </bdi>검증가능한 프레젠테이션</a></li></ol></li><li class="tocline"><a class="tocxref" href="#advanced-concepts"><bdi class="secno">5. </bdi>고급 개념</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#trust-model"><bdi class="secno">5.1 </bdi>신뢰 모델</a></li><li class="tocline"><a class="tocxref" href="#extensibility"><bdi class="secno">5.2 </bdi>확장성</a></li><li class="tocline"><a class="tocxref" href="#integrity-of-related-resources"><bdi class="secno">5.3 </bdi>관련 자원의 무결성</a></li><li class="tocline"><a class="tocxref" href="#refreshing"><bdi class="secno">5.4 </bdi>갱신</a></li><li class="tocline"><a class="tocxref" href="#terms-of-use"><bdi class="secno">5.5 </bdi>사용 조건</a></li><li class="tocline"><a class="tocxref" href="#evidence"><bdi class="secno">5.6 </bdi>증거</a></li><li class="tocline"><a class="tocxref" href="#zero-knowledge-proofs"><bdi class="secno">5.7 </bdi>영지식 증명</a></li><li class="tocline"><a class="tocxref" href="#representing-time"><bdi class="secno">5.8 </bdi>시간 표현</a></li><li class="tocline"><a class="tocxref" href="#authorization"><bdi class="secno">5.9 </bdi>인가</a></li><li class="tocline"><a class="tocxref" href="#reserved-extension-points"><bdi class="secno">5.10 </bdi>예약된 확장점</a></li><li class="tocline"><a class="tocxref" href="#ecosystem-compatibility"><bdi class="secno">5.11 </bdi>생태계 호환성</a></li><li class="tocline"><a class="tocxref" href="#verifiable-credential-graphs"><bdi class="secno">5.12 </bdi>검증가능한 크리덴셜 그래프</a></li><li class="tocline"><a class="tocxref" href="#securing-mechanism-specifications"><bdi class="secno">5.13 </bdi>보안 메커니즘 규격</a></li></ol></li><li class="tocline"><a class="tocxref" href="#syntaxes"><bdi class="secno">6. </bdi>구문</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#json-ld"><bdi class="secno">6.1 </bdi>JSON-LD</a></li><li class="tocline"><a class="tocxref" href="#media-types"><bdi class="secno">6.2 </bdi>미디어 타입</a></li><li class="tocline"><a class="tocxref" href="#type-specific-credential-processing"><bdi class="secno">6.3 </bdi>타입별 크리덴셜 처리</a></li></ol></li><li class="tocline"><a class="tocxref" href="#algorithms"><bdi class="secno">7. </bdi>Algorithms</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verification"><bdi class="secno">7.1 </bdi>Verification</a></li><li class="tocline"><a class="tocxref" href="#problem-details"><bdi class="secno">7.2 </bdi>Problem Details</a></li></ol></li><li class="tocline"><a class="tocxref" href="#privacy-considerations"><bdi class="secno">8. </bdi>Privacy Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#spectrum-of-privacy"><bdi class="secno">8.1 </bdi>Spectrum of Privacy</a></li><li class="tocline"><a class="tocxref" href="#software-trust-boundaries"><bdi class="secno">8.2 </bdi>Software Trust Boundaries</a></li><li class="tocline"><a class="tocxref" href="#personally-identifiable-information"><bdi class="secno">8.3 </bdi>Personally Identifiable Information</a></li><li class="tocline"><a class="tocxref" href="#identifier-based-correlation"><bdi class="secno">8.4 </bdi>Identifier-Based Correlation</a></li><li class="tocline"><a class="tocxref" href="#signature-based-correlation"><bdi class="secno">8.5 </bdi>Signature-Based Correlation</a></li><li class="tocline"><a class="tocxref" href="#metadata-based-correlation"><bdi class="secno">8.6 </bdi>Metadata-based Correlation</a></li><li class="tocline"><a class="tocxref" href="#device-tracking-and-fingerprinting"><bdi class="secno">8.7 </bdi>Device Tracking and Fingerprinting</a></li><li class="tocline"><a class="tocxref" href="#favor-abstract-claims"><bdi class="secno">8.8 </bdi>Favor Abstract Claims</a></li><li class="tocline"><a class="tocxref" href="#the-principle-of-data-minimization"><bdi class="secno">8.9 </bdi>The Principle of Data Minimization</a></li><li class="tocline"><a class="tocxref" href="#bearer-credentials"><bdi class="secno">8.10 </bdi>Bearer Credentials</a></li><li class="tocline"><a class="tocxref" href="#correlation-during-validation"><bdi class="secno">8.11 </bdi>Correlation During Validation</a></li><li class="tocline"><a class="tocxref" href="#storage-providers-and-data-mining"><bdi class="secno">8.12 </bdi>Storage Providers and Data Mining</a></li><li class="tocline"><a class="tocxref" href="#aggregation-of-credentials"><bdi class="secno">8.13 </bdi>Aggregation of Credentials</a></li><li class="tocline"><a class="tocxref" href="#patterns-of-use"><bdi class="secno">8.14 </bdi>Patterns of Use</a></li><li class="tocline"><a class="tocxref" href="#legal-processes"><bdi class="secno">8.15 </bdi>Legal Processes</a></li><li class="tocline"><a class="tocxref" href="#sharing-information-with-the-wrong-party"><bdi class="secno">8.16 </bdi>Sharing Information with the Wrong Party</a></li><li class="tocline"><a class="tocxref" href="#data-theft"><bdi class="secno">8.17 </bdi>Data Theft</a></li><li class="tocline"><a class="tocxref" href="#frequency-of-claim-issuance"><bdi class="secno">8.18 </bdi>Frequency of Claim Issuance</a></li><li class="tocline"><a class="tocxref" href="#prefer-single-use-credentials"><bdi class="secno">8.19 </bdi>Prefer Single-Use Credentials</a></li><li class="tocline"><a class="tocxref" href="#private-browsing"><bdi class="secno">8.20 </bdi>Private Browsing</a></li><li class="tocline"><a class="tocxref" href="#issuer-cooperation-impacts-on-privacy"><bdi class="secno">8.21 </bdi>Issuer Cooperation Impacts on Privacy</a></li></ol></li><li class="tocline"><a class="tocxref" href="#security-considerations"><bdi class="secno">9. </bdi>Security Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cryptography-suites-and-libraries"><bdi class="secno">9.1 </bdi>Cryptography Suites and Libraries</a></li><li class="tocline"><a class="tocxref" href="#key-management"><bdi class="secno">9.2 </bdi>Key Management</a></li><li class="tocline"><a class="tocxref" href="#content-integrity-protection"><bdi class="secno">9.3 </bdi>Content Integrity Protection</a></li><li class="tocline"><a class="tocxref" href="#unsigned-claims"><bdi class="secno">9.4 </bdi>Unsigned Claims</a></li><li class="tocline"><a class="tocxref" href="#man-in-the-middle-mitm-replay-and-cloning-attacks"><bdi class="secno">9.5 </bdi>Man-in-the-Middle (MITM), Replay, and Cloning Attacks</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#man-in-the-middle-mitm-attack"><bdi class="secno">9.5.1 </bdi>Man-in-the-Middle (MITM) Attack</a></li><li class="tocline"><a class="tocxref" href="#replay-attack"><bdi class="secno">9.5.2 </bdi>Replay Attack</a></li><li class="tocline"><a class="tocxref" href="#spoofing-attack"><bdi class="secno">9.5.3 </bdi>Spoofing Attack</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bundling-dependent-claims"><bdi class="secno">9.6 </bdi>Bundling Dependent Claims</a></li><li class="tocline"><a class="tocxref" href="#highly-dynamic-information"><bdi class="secno">9.7 </bdi>Highly Dynamic Information</a></li><li class="tocline"><a class="tocxref" href="#device-theft-and-impersonation"><bdi class="secno">9.8 </bdi>Device Theft and Impersonation</a></li><li class="tocline"><a class="tocxref" href="#acceptable-use"><bdi class="secno">9.9 </bdi>Acceptable Use</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#unauthorized-use"><bdi class="secno">9.9.1 </bdi>Unauthorized Use</a></li><li class="tocline"><a class="tocxref" href="#inappropriate-use"><bdi class="secno">9.9.2 </bdi>Inappropriate Use</a></li></ol></li><li class="tocline"><a class="tocxref" href="#code-injection"><bdi class="secno">9.10 </bdi>Code Injection</a></li></ol></li><li class="tocline"><a class="tocxref" href="#accessibility-considerations"><bdi class="secno">10. </bdi>Accessibility Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#data-first-approaches"><bdi class="secno">10.1 </bdi>Data First Approaches</a></li></ol></li><li class="tocline"><a class="tocxref" href="#internationalization-considerations"><bdi class="secno">11. </bdi>Internationalization Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#language-and-base-direction"><bdi class="secno">11.1 </bdi>Language and Base Direction</a></li><li class="tocline"><a class="tocxref" href="#providing-default-language-and-direction"><bdi class="secno">11.2 </bdi>Providing Default Language and Direction</a></li></ol></li><li class="tocline"><a class="tocxref" href="#validation"><bdi class="secno">A. </bdi>Validation</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#credential-type"><bdi class="secno">A.1 </bdi>Credential Type</a></li><li class="tocline"><a class="tocxref" href="#credential-subject-0"><bdi class="secno">A.2 </bdi>Credential Subject</a></li><li class="tocline"><a class="tocxref" href="#issuer-0"><bdi class="secno">A.3 </bdi>Issuer</a></li><li class="tocline"><a class="tocxref" href="#holder"><bdi class="secno">A.4 </bdi>Holder</a></li><li class="tocline"><a class="tocxref" href="#issuance-date"><bdi class="secno">A.5 </bdi>Issuance Date</a></li><li class="tocline"><a class="tocxref" href="#proofs-signatures"><bdi class="secno">A.6 </bdi>Proofs (Signatures)</a></li><li class="tocline"><a class="tocxref" href="#validity-periods"><bdi class="secno">A.7 </bdi>Validity Periods</a></li><li class="tocline"><a class="tocxref" href="#status-0"><bdi class="secno">A.8 </bdi>Status</a></li><li class="tocline"><a class="tocxref" href="#schema"><bdi class="secno">A.9 </bdi>Schema</a></li><li class="tocline"><a class="tocxref" href="#fitness-for-purpose"><bdi class="secno">A.10 </bdi>Fitness for Purpose</a></li><li class="tocline"><a class="tocxref" href="#artificial-intelligence-and-machine-learning"><bdi class="secno">A.11 </bdi>"Artificial Intelligence" and "Machine Learning"</a></li></ol></li><li class="tocline"><a class="tocxref" href="#contexts-vocabularies-types-and-credential-schemas"><bdi class="secno">B. </bdi>Contexts, Vocabularies, Types, and Credential Schemas</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#base-context"><bdi class="secno">B.1 </bdi>Base Context</a></li><li class="tocline"><a class="tocxref" href="#vocabularies"><bdi class="secno">B.2 </bdi>Vocabularies</a></li><li class="tocline"><a class="tocxref" href="#datatypes"><bdi class="secno">B.3 </bdi>Datatypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#the-sristring-datatype"><bdi class="secno">B.3.1 </bdi>The <code>sriString</code> Datatype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#differences-between-contexts-types-and-credentialschemas"><bdi class="secno">B.4 </bdi>Differences between Contexts, Types, and CredentialSchemas</a></li></ol></li><li class="tocline"><a class="tocxref" href="#iana-considerations"><bdi class="secno">C. </bdi>IANA Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vc-ld-media-type"><bdi class="secno">C.1 </bdi>application/vc</a></li><li class="tocline"><a class="tocxref" href="#vp-ld-media-type"><bdi class="secno">C.2 </bdi>application/vp</a></li></ol></li><li class="tocline"><a class="tocxref" href="#additional-diagrams-for-verifiable-presentations"><bdi class="secno">D. </bdi>Additional Diagrams for Verifiable Presentations</a></li><li class="tocline"><a class="tocxref" href="#revision-history"><bdi class="secno">E. </bdi>Revision History</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">F. </bdi>Acknowledgements</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">G. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">G.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">G.2 </bdi>Informative references</a></li></ol></li></ol></nav>
+                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">요약</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>소개</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#what-is-a-verifiable-credential"><bdi class="secno">1.1 </bdi>검증가능한 크리덴셜이란 무엇인가?</a></li><li class="tocline"><a class="tocxref" href="#ecosystem-overview"><bdi class="secno">1.2 </bdi>생태계 개요</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1.3 </bdi>적합성</a></li></ol></li><li class="tocline"><a class="tocxref" href="#terminology"><bdi class="secno">2. </bdi>용어</a></li><li class="tocline"><a class="tocxref" href="#core-data-model"><bdi class="secno">3. </bdi>핵심 데이터 모델</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#claims"><bdi class="secno">3.1 </bdi>클레임</a></li><li class="tocline"><a class="tocxref" href="#credentials"><bdi class="secno">3.2 </bdi>크리덴셜</a></li><li class="tocline"><a class="tocxref" href="#presentations"><bdi class="secno">3.3 </bdi>프레젠테이션</a></li></ol></li><li class="tocline"><a class="tocxref" href="#basic-concepts"><bdi class="secno">4. </bdi>기본 개념</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#getting-started"><bdi class="secno">4.1 </bdi>시작하기</a></li><li class="tocline"><a class="tocxref" href="#verifiable-credentials"><bdi class="secno">4.2 </bdi>검증가능한 크리덴셜</a></li><li class="tocline"><a class="tocxref" href="#contexts"><bdi class="secno">4.3 </bdi>컨텍스트</a></li><li class="tocline"><a class="tocxref" href="#identifiers"><bdi class="secno">4.4 </bdi>식별자</a></li><li class="tocline"><a class="tocxref" href="#types"><bdi class="secno">4.5 </bdi>타입</a></li><li class="tocline"><a class="tocxref" href="#names-and-descriptions"><bdi class="secno">4.6 </bdi>이름과 설명</a></li><li class="tocline"><a class="tocxref" href="#issuer"><bdi class="secno">4.7 </bdi>발급자</a></li><li class="tocline"><a class="tocxref" href="#credential-subject"><bdi class="secno">4.8 </bdi>크리덴셜 주체</a></li><li class="tocline"><a class="tocxref" href="#validity-period"><bdi class="secno">4.9 </bdi>유효 기간</a></li><li class="tocline"><a class="tocxref" href="#status"><bdi class="secno">4.10 </bdi>상태</a></li><li class="tocline"><a class="tocxref" href="#data-schemas"><bdi class="secno">4.11 </bdi>데이터 스키마</a></li><li class="tocline"><a class="tocxref" href="#securing-mechanisms"><bdi class="secno">4.12 </bdi>보안 메커니즘</a></li><li class="tocline"><a class="tocxref" href="#verifiable-presentations"><bdi class="secno">4.13 </bdi>검증가능한 프레젠테이션</a></li></ol></li><li class="tocline"><a class="tocxref" href="#advanced-concepts"><bdi class="secno">5. </bdi>고급 개념</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#trust-model"><bdi class="secno">5.1 </bdi>신뢰 모델</a></li><li class="tocline"><a class="tocxref" href="#extensibility"><bdi class="secno">5.2 </bdi>확장성</a></li><li class="tocline"><a class="tocxref" href="#integrity-of-related-resources"><bdi class="secno">5.3 </bdi>관련 자원의 무결성</a></li><li class="tocline"><a class="tocxref" href="#refreshing"><bdi class="secno">5.4 </bdi>갱신</a></li><li class="tocline"><a class="tocxref" href="#terms-of-use"><bdi class="secno">5.5 </bdi>사용 조건</a></li><li class="tocline"><a class="tocxref" href="#evidence"><bdi class="secno">5.6 </bdi>증거</a></li><li class="tocline"><a class="tocxref" href="#zero-knowledge-proofs"><bdi class="secno">5.7 </bdi>영지식 증명</a></li><li class="tocline"><a class="tocxref" href="#representing-time"><bdi class="secno">5.8 </bdi>시간 표현</a></li><li class="tocline"><a class="tocxref" href="#authorization"><bdi class="secno">5.9 </bdi>인가</a></li><li class="tocline"><a class="tocxref" href="#reserved-extension-points"><bdi class="secno">5.10 </bdi>예약된 확장점</a></li><li class="tocline"><a class="tocxref" href="#ecosystem-compatibility"><bdi class="secno">5.11 </bdi>생태계 호환성</a></li><li class="tocline"><a class="tocxref" href="#verifiable-credential-graphs"><bdi class="secno">5.12 </bdi>검증가능한 크리덴셜 그래프</a></li><li class="tocline"><a class="tocxref" href="#securing-mechanism-specifications"><bdi class="secno">5.13 </bdi>보안 메커니즘 규격</a></li></ol></li><li class="tocline"><a class="tocxref" href="#syntaxes"><bdi class="secno">6. </bdi>구문</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#json-ld"><bdi class="secno">6.1 </bdi>JSON-LD</a></li><li class="tocline"><a class="tocxref" href="#media-types"><bdi class="secno">6.2 </bdi>미디어 타입</a></li><li class="tocline"><a class="tocxref" href="#type-specific-credential-processing"><bdi class="secno">6.3 </bdi>타입별 크리덴셜 처리</a></li></ol></li><li class="tocline"><a class="tocxref" href="#algorithms"><bdi class="secno">7. </bdi>알고리즘</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verification"><bdi class="secno">7.1 </bdi>검증</a></li><li class="tocline"><a class="tocxref" href="#problem-details"><bdi class="secno">7.2 </bdi>문제 세부 정보</a></li></ol></li><li class="tocline"><a class="tocxref" href="#privacy-considerations"><bdi class="secno">8. </bdi>Privacy Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#spectrum-of-privacy"><bdi class="secno">8.1 </bdi>Spectrum of Privacy</a></li><li class="tocline"><a class="tocxref" href="#software-trust-boundaries"><bdi class="secno">8.2 </bdi>Software Trust Boundaries</a></li><li class="tocline"><a class="tocxref" href="#personally-identifiable-information"><bdi class="secno">8.3 </bdi>Personally Identifiable Information</a></li><li class="tocline"><a class="tocxref" href="#identifier-based-correlation"><bdi class="secno">8.4 </bdi>Identifier-Based Correlation</a></li><li class="tocline"><a class="tocxref" href="#signature-based-correlation"><bdi class="secno">8.5 </bdi>Signature-Based Correlation</a></li><li class="tocline"><a class="tocxref" href="#metadata-based-correlation"><bdi class="secno">8.6 </bdi>Metadata-based Correlation</a></li><li class="tocline"><a class="tocxref" href="#device-tracking-and-fingerprinting"><bdi class="secno">8.7 </bdi>Device Tracking and Fingerprinting</a></li><li class="tocline"><a class="tocxref" href="#favor-abstract-claims"><bdi class="secno">8.8 </bdi>Favor Abstract Claims</a></li><li class="tocline"><a class="tocxref" href="#the-principle-of-data-minimization"><bdi class="secno">8.9 </bdi>The Principle of Data Minimization</a></li><li class="tocline"><a class="tocxref" href="#bearer-credentials"><bdi class="secno">8.10 </bdi>Bearer Credentials</a></li><li class="tocline"><a class="tocxref" href="#correlation-during-validation"><bdi class="secno">8.11 </bdi>Correlation During Validation</a></li><li class="tocline"><a class="tocxref" href="#storage-providers-and-data-mining"><bdi class="secno">8.12 </bdi>Storage Providers and Data Mining</a></li><li class="tocline"><a class="tocxref" href="#aggregation-of-credentials"><bdi class="secno">8.13 </bdi>Aggregation of Credentials</a></li><li class="tocline"><a class="tocxref" href="#patterns-of-use"><bdi class="secno">8.14 </bdi>Patterns of Use</a></li><li class="tocline"><a class="tocxref" href="#legal-processes"><bdi class="secno">8.15 </bdi>Legal Processes</a></li><li class="tocline"><a class="tocxref" href="#sharing-information-with-the-wrong-party"><bdi class="secno">8.16 </bdi>Sharing Information with the Wrong Party</a></li><li class="tocline"><a class="tocxref" href="#data-theft"><bdi class="secno">8.17 </bdi>Data Theft</a></li><li class="tocline"><a class="tocxref" href="#frequency-of-claim-issuance"><bdi class="secno">8.18 </bdi>Frequency of Claim Issuance</a></li><li class="tocline"><a class="tocxref" href="#prefer-single-use-credentials"><bdi class="secno">8.19 </bdi>Prefer Single-Use Credentials</a></li><li class="tocline"><a class="tocxref" href="#private-browsing"><bdi class="secno">8.20 </bdi>Private Browsing</a></li><li class="tocline"><a class="tocxref" href="#issuer-cooperation-impacts-on-privacy"><bdi class="secno">8.21 </bdi>Issuer Cooperation Impacts on Privacy</a></li></ol></li><li class="tocline"><a class="tocxref" href="#security-considerations"><bdi class="secno">9. </bdi>Security Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#cryptography-suites-and-libraries"><bdi class="secno">9.1 </bdi>Cryptography Suites and Libraries</a></li><li class="tocline"><a class="tocxref" href="#key-management"><bdi class="secno">9.2 </bdi>Key Management</a></li><li class="tocline"><a class="tocxref" href="#content-integrity-protection"><bdi class="secno">9.3 </bdi>Content Integrity Protection</a></li><li class="tocline"><a class="tocxref" href="#unsigned-claims"><bdi class="secno">9.4 </bdi>Unsigned Claims</a></li><li class="tocline"><a class="tocxref" href="#man-in-the-middle-mitm-replay-and-cloning-attacks"><bdi class="secno">9.5 </bdi>Man-in-the-Middle (MITM), Replay, and Cloning Attacks</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#man-in-the-middle-mitm-attack"><bdi class="secno">9.5.1 </bdi>Man-in-the-Middle (MITM) Attack</a></li><li class="tocline"><a class="tocxref" href="#replay-attack"><bdi class="secno">9.5.2 </bdi>Replay Attack</a></li><li class="tocline"><a class="tocxref" href="#spoofing-attack"><bdi class="secno">9.5.3 </bdi>Spoofing Attack</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bundling-dependent-claims"><bdi class="secno">9.6 </bdi>Bundling Dependent Claims</a></li><li class="tocline"><a class="tocxref" href="#highly-dynamic-information"><bdi class="secno">9.7 </bdi>Highly Dynamic Information</a></li><li class="tocline"><a class="tocxref" href="#device-theft-and-impersonation"><bdi class="secno">9.8 </bdi>Device Theft and Impersonation</a></li><li class="tocline"><a class="tocxref" href="#acceptable-use"><bdi class="secno">9.9 </bdi>Acceptable Use</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#unauthorized-use"><bdi class="secno">9.9.1 </bdi>Unauthorized Use</a></li><li class="tocline"><a class="tocxref" href="#inappropriate-use"><bdi class="secno">9.9.2 </bdi>Inappropriate Use</a></li></ol></li><li class="tocline"><a class="tocxref" href="#code-injection"><bdi class="secno">9.10 </bdi>Code Injection</a></li></ol></li><li class="tocline"><a class="tocxref" href="#accessibility-considerations"><bdi class="secno">10. </bdi>Accessibility Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#data-first-approaches"><bdi class="secno">10.1 </bdi>Data First Approaches</a></li></ol></li><li class="tocline"><a class="tocxref" href="#internationalization-considerations"><bdi class="secno">11. </bdi>Internationalization Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#language-and-base-direction"><bdi class="secno">11.1 </bdi>Language and Base Direction</a></li><li class="tocline"><a class="tocxref" href="#providing-default-language-and-direction"><bdi class="secno">11.2 </bdi>Providing Default Language and Direction</a></li></ol></li><li class="tocline"><a class="tocxref" href="#validation"><bdi class="secno">A. </bdi>Validation</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#credential-type"><bdi class="secno">A.1 </bdi>Credential Type</a></li><li class="tocline"><a class="tocxref" href="#credential-subject-0"><bdi class="secno">A.2 </bdi>Credential Subject</a></li><li class="tocline"><a class="tocxref" href="#issuer-0"><bdi class="secno">A.3 </bdi>Issuer</a></li><li class="tocline"><a class="tocxref" href="#holder"><bdi class="secno">A.4 </bdi>Holder</a></li><li class="tocline"><a class="tocxref" href="#issuance-date"><bdi class="secno">A.5 </bdi>Issuance Date</a></li><li class="tocline"><a class="tocxref" href="#proofs-signatures"><bdi class="secno">A.6 </bdi>Proofs (Signatures)</a></li><li class="tocline"><a class="tocxref" href="#validity-periods"><bdi class="secno">A.7 </bdi>Validity Periods</a></li><li class="tocline"><a class="tocxref" href="#status-0"><bdi class="secno">A.8 </bdi>Status</a></li><li class="tocline"><a class="tocxref" href="#schema"><bdi class="secno">A.9 </bdi>Schema</a></li><li class="tocline"><a class="tocxref" href="#fitness-for-purpose"><bdi class="secno">A.10 </bdi>Fitness for Purpose</a></li><li class="tocline"><a class="tocxref" href="#artificial-intelligence-and-machine-learning"><bdi class="secno">A.11 </bdi>"Artificial Intelligence" and "Machine Learning"</a></li></ol></li><li class="tocline"><a class="tocxref" href="#contexts-vocabularies-types-and-credential-schemas"><bdi class="secno">B. </bdi>Contexts, Vocabularies, Types, and Credential Schemas</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#base-context"><bdi class="secno">B.1 </bdi>Base Context</a></li><li class="tocline"><a class="tocxref" href="#vocabularies"><bdi class="secno">B.2 </bdi>Vocabularies</a></li><li class="tocline"><a class="tocxref" href="#datatypes"><bdi class="secno">B.3 </bdi>Datatypes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#the-sristring-datatype"><bdi class="secno">B.3.1 </bdi>The <code>sriString</code> Datatype</a></li></ol></li><li class="tocline"><a class="tocxref" href="#differences-between-contexts-types-and-credentialschemas"><bdi class="secno">B.4 </bdi>Differences between Contexts, Types, and CredentialSchemas</a></li></ol></li><li class="tocline"><a class="tocxref" href="#iana-considerations"><bdi class="secno">C. </bdi>IANA Considerations</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vc-ld-media-type"><bdi class="secno">C.1 </bdi>application/vc</a></li><li class="tocline"><a class="tocxref" href="#vp-ld-media-type"><bdi class="secno">C.2 </bdi>application/vp</a></li></ol></li><li class="tocline"><a class="tocxref" href="#additional-diagrams-for-verifiable-presentations"><bdi class="secno">D. </bdi>Additional Diagrams for Verifiable Presentations</a></li><li class="tocline"><a class="tocxref" href="#revision-history"><bdi class="secno">E. </bdi>Revision History</a></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">F. </bdi>Acknowledgements</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">G. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">G.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">G.2 </bdi>Informative references</a></li></ol></li></ol></nav>
 
     <section class="informative" id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>소개</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div><p><em>이 부분은 비규범적입니다.</em></p>
       
@@ -7798,151 +7798,152 @@ JSON Schema와 함께 정적 컨텍스트 파일을 사용하는 것은 위 규�
 
     </section>
 
-    <section class="normative" id="algorithms"><div class="header-wrapper"><h2 id="x7-algorithms"><bdi class="secno">7. </bdi>Algorithms</h2><a class="self-link" href="#algorithms" aria-label="Permalink for Section 7."></a></div>
+    <section class="normative" id="algorithms"><div class="header-wrapper"><h2 id="x7-algorithms"><bdi class="secno">7. </bdi>알고리즘</h2><a class="self-link" href="#algorithms" aria-label="Permalink for Section 7."></a></div>
       
 
       <p>
-This section contains algorithms that can be used by implementations to perform
-common operations, such as <a data-link-type="dfn|abstract-op" href="#dfn-verify" class="internalDFN" id="ref-for-dfn-verify-12">verification</a>. Conformance requirements phrased as
-algorithms use normative concepts from the <cite><a data-matched-text="[[[INFRA]]]" href="https://infra.spec.whatwg.org/">Infra Standard</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-infra" title="Infra Standard">INFRA</a></cite>]. See the
-section on <a href="https://infra.spec.whatwg.org/#algorithm-conformance">Algorithm Conformance</a>
-in the <cite><a data-matched-text="[[[INFRA]]]" href="https://infra.spec.whatwg.org/">Infra Standard</a></cite> for more guidance on implementation requirements.
+이 절에는 구현이 <a data-link-type="dfn|abstract-op" href="#dfn-verify" class="internalDFN" id="ref-for-dfn-verify-12">검증</a>과 같은 일반적인 연산을 수행하는
+데 사용할 수 있는 알고리즘이 담겨 있다. 알고리즘으로 표현된 적합성 요구사항은
+<cite><a data-matched-text="[[[INFRA]]]" href="https://infra.spec.whatwg.org/">Infra Standard</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-infra" title="Infra Standard">INFRA</a></cite>]의 규범적 개념을 사용한다.
+구현 요구사항에 대한 자세한 지침은 <cite><a data-matched-text="[[[INFRA]]]" href="https://infra.spec.whatwg.org/">Infra Standard</a></cite>의
+<a href="https://infra.spec.whatwg.org/#algorithm-conformance">Algorithm Conformance</a>
+절을 참조한다.
       </p>
 
-      <div class="note" role="note" id="issue-container-generatedID-25"><div role="heading" class="note-title marker" id="h-note-25" aria-level="3"><span>Note</span><span class="issue-label">: Implementers can include additional checks, warnings, and errors.</span></div><p class="">
-Implementers are advised that the algorithms in this section contain the bare
-minimum set of checks used by implementations to test conformance to this
-specification. Implementations are expected to provide additional checks that
-report helpful warnings for developers to help debug potential issues.
-Similarly, implementations are likely to provide additional checks that
-could result in new types of errors being reported in order to stop harmful
-content. Any of these additional checks might be integrated into future
-versions of this specification.
+      <div class="note" role="note" id="issue-container-generatedID-25"><div role="heading" class="note-title marker" id="h-note-25" aria-level="3"><span>참고</span><span class="issue-label">: 구현자는 추가 검사, 경고, 오류를 포함할 수 있다.</span></div><p class="">
+구현자는 이 절의 알고리즘이 이 규격에 대한 적합성을 시험하기 위해 구현이 사용하는
+최소한의 검사 집합만을 담고 있다는 점에 유의해야 한다. 구현은 개발자가 잠재적 문제를
+디버깅하는 데 도움이 되는 유용한 경고를 보고하는 추가 검사를 제공할 것으로 기대된다.
+마찬가지로 구현은 해로운 콘텐츠를 막기 위해 새로운 유형의 오류 보고로 이어질 수 있는
+추가 검사를 제공할 가능성이 크다. 이러한 추가 검사 중 어느 것이든 이 규격의 향후
+버전에 통합될 수 있다.
       </p></div>
 
-      <section class="normative" id="verification"><div class="header-wrapper"><h3 id="x7-1-verification"><bdi class="secno">7.1 </bdi>Verification</h3><a class="self-link" href="#verification" aria-label="Permalink for Section 7.1"></a></div>
+      <section class="normative" id="verification"><div class="header-wrapper"><h3 id="x7-1-verification"><bdi class="secno">7.1 </bdi>검증</h3><a class="self-link" href="#verification" aria-label="Permalink for Section 7.1"></a></div>
         
 
         <p>
-This section contains an algorithm that <a data-link-type="dfn|abstract-op" href="#dfn-conforming-verifier-implementation" class="internalDFN" id="ref-for-dfn-conforming-verifier-implementation-4">conforming verifier implementations</a>
-<em class="rfc2119">MUST</em> run when verifying a <a data-link-type="dfn|abstract-op" href="#dfn-verifiable-credential" class="internalDFN" id="ref-for-dfn-verifiable-credential-221">verifiable credential</a> or a <a data-link-type="dfn|abstract-op" href="#dfn-verifiable-presentation" class="internalDFN" id="ref-for-dfn-verifiable-presentation-91">verifiable presentation</a>. This algorithm takes a media type (<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#string">string</a> <var>inputMediaType</var>)
-and secured data (<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#byte-sequence">byte sequence</a> <var>inputData</var>) and returns a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map">map</a> that
-contains the following:
+이 절에는 <a data-link-type="dfn|abstract-op" href="#dfn-conforming-verifier-implementation" class="internalDFN" id="ref-for-dfn-conforming-verifier-implementation-4">적합 검증자 구현</a>이
+<a data-link-type="dfn|abstract-op" href="#dfn-verifiable-credential" class="internalDFN" id="ref-for-dfn-verifiable-credential-221">검증가능한 크리덴셜</a>이나
+<a data-link-type="dfn|abstract-op" href="#dfn-verifiable-presentation" class="internalDFN" id="ref-for-dfn-verifiable-presentation-91">검증가능한 프레젠테이션</a>을 검증할 때 실행<em class="rfc2119">해야 하는</em>
+알고리즘이 담겨 있다. 이 알고리즘은 미디어 타입(<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#string">문자열</a>
+<var>inputMediaType</var>)과 보호된 데이터(<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#byte-sequence">바이트 시퀀스</a>
+<var>inputData</var>)를 받아 다음을 담은 <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map">맵</a>을 반환한다.
         </p>
 
         <ul>
           <li>
-a status (<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#boolean">boolean</a> <var>status</var>)
+상태(<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#boolean">불리언</a> <var>status</var>)
           </li>
           <li>
-a <a data-link-type="dfn|abstract-op" href="#dfn-conforming-document" class="internalDFN" id="ref-for-dfn-conforming-document-32">conforming document</a> (<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map">map</a> <var>document</var>)
+<a data-link-type="dfn|abstract-op" href="#dfn-conforming-document" class="internalDFN" id="ref-for-dfn-conforming-document-32">적합 문서</a>(<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map">맵</a> <var>document</var>)
           </li>
           <li>
-a media type (<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#string">string</a> <var>mediaType</var>)
+미디어 타입(<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#string">문자열</a> <var>mediaType</var>)
           </li>
           <li>
-a controller of the verification method associated with the securing mechanism
-(<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#string">string</a> <var>controller</var>)
+보안 메커니즘과 연관된 검증 방법의 제어자(<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#string">문자열</a>
+<var>controller</var>)
           </li>
           <li>
-a controlled identifier document that is associated with the verification method
-used to verify the securing mechanism (<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map">map</a> <var>controlledIdentifierDocument</var>)
+보안 메커니즘을 검증하는 데 사용된 검증 방법과 연관된 제어 식별자
+문서(<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map">맵</a> <var>controlledIdentifierDocument</var>)
           </li>
           <li>
-zero or more warnings (<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list">list</a> of <a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-1">ProblemDetails</a> <var>warnings</var>)
+0개 이상의 경고(<a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-1">ProblemDetails</a>의 <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list">리스트</a> <var>warnings</var>)
           </li>
           <li>
-zero or more errors (<a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list">list</a> of <a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-2">ProblemDetails</a> <var>errors</var>)
+0개 이상의 오류(<a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-2">ProblemDetails</a>의 <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#list">리스트</a> <var>errors</var>)
           </li>
         </ul>
 
         <p>
-The verification algorithm is as follows:
+검증 알고리즘은 다음과 같다.
         </p>
 
         <ol class="algorithm">
           <li>
-Ensure that the securing mechanism has properly protected the
-<a data-link-type="dfn|abstract-op" href="#dfn-conforming-document" class="internalDFN" id="ref-for-dfn-conforming-document-33">conforming document</a> by performing the following steps:
+다음 단계를 수행하여 보안 메커니즘이 <a data-link-type="dfn|abstract-op" href="#dfn-conforming-document" class="internalDFN" id="ref-for-dfn-conforming-document-33">적합 문서</a>를 제대로
+보호했는지 확인한다.
             <ol class="algorithm">
              <li>
-Set the <var>verifyProof</var> function by using the <var>inputMediaType</var> and the
-<a href="https://w3c.github.io/vc-extensions/#securing-mechanisms">Securing Mechanisms</a>
-section of the <cite><a data-matched-text="[[[?VC-EXTENSIONS]]]" href="https://w3c.github.io/vc-extensions/">Verifiable Credential Extensions</a></cite> document, or other mechanisms known to the
-implementation, to determine the cryptographic suite to use when verifying the
-securing mechanism. The <var>verifyProof</var> function <em class="rfc2119">MUST</em> implement the interface
-described in <a href="#securing-mechanism-specifications" data-matched-text="[[[#securing-mechanism-specifications]]]" class="sec-ref"><bdi class="secno">5.13 </bdi>Securing Mechanism Specifications</a>.
+<var>inputMediaType</var>과 <cite><a data-matched-text="[[[?VC-EXTENSIONS]]]" href="https://w3c.github.io/vc-extensions/">Verifiable Credential Extensions</a></cite>
+문서의 <a href="https://w3c.github.io/vc-extensions/#securing-mechanisms">Securing Mechanisms</a>
+절, 또는 그 구현에 알려진 다른 메커니즘을 사용하여 보안 메커니즘을 검증할 때 사용할
+암호 스위트를 결정함으로써 <var>verifyProof</var> 함수를 설정한다.
+<var>verifyProof</var> 함수는 <a href="#securing-mechanism-specifications" data-matched-text="[[[#securing-mechanism-specifications]]]" class="sec-ref"><bdi class="secno">5.13 </bdi>보안 메커니즘 규격</a>에서
+기술하는 인터페이스를 구현<em class="rfc2119">해야 한다</em>.
               </li>
               <li>
-If the <var>verifyProof</var> function expects a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#byte-sequence">byte sequence</a>, provide
-<var>inputMediaType</var> and <var>inputData</var> to the algorithm. If the <var>verifyProof</var> function
-expects a <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map">map</a>, provide <var>inputMediaType</var> and the result of <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#parse-json-bytes-to-an-infra-value">parse JSON bytes to an Infra value</a> given <var>inputData</var>. Set <var>result</var> to the result of the
-call to the <var>verifyProof</var> function. If the call was successful, <var>result</var> will
-contain the <var>status</var>, <var>document</var>, <var>mediaType</var>, <var>controller</var>,
-<var>controlledIdentifierDocument</var>, <var>warnings</var>, and <var>errors</var> properties.
+<var>verifyProof</var> 함수가 <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#byte-sequence">바이트 시퀀스</a>를 기대하면
+<var>inputMediaType</var>과 <var>inputData</var>를 알고리즘에 제공한다.
+<var>verifyProof</var> 함수가 <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#ordered-map">맵</a>을 기대하면
+<var>inputMediaType</var>과, <var>inputData</var>에 대해 <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#parse-json-bytes-to-an-infra-value">JSON 바이트를 Infra 값으로 파싱</a>한 결과를 제공한다. <var>result</var>를
+<var>verifyProof</var> 함수 호출의 결과로 설정한다. 호출이 성공했다면 <var>result</var>에는
+<var>status</var>, <var>document</var>, <var>mediaType</var>, <var>controller</var>,
+<var>controlledIdentifierDocument</var>, <var>warnings</var>, <var>errors</var> 속성이 담긴다.
               </li>
               <li>
-If <var>result</var>.<var>status</var> is set to <code>false</code>, add a
-<a href="#CRYPTOGRAPHIC_SECURITY_ERROR">CRYPTOGRAPHIC_SECURITY_ERROR</a> to
-<var>result</var>.<var>errors</var>.
+<var>result</var>.<var>status</var>가 <code>false</code>로 설정되어 있으면
+<var>result</var>.<var>errors</var>에
+<a href="#CRYPTOGRAPHIC_SECURITY_ERROR">CRYPTOGRAPHIC_SECURITY_ERROR</a>를 추가한다.
               </li>
             </ol>
           </li>
           <li>
-If <var>result</var>.<var>status</var> is set to <code>true</code>, ensure that
-<var>result</var>.<var>document</var> is a <a data-link-type="dfn|abstract-op" href="#dfn-conforming-document" class="internalDFN" id="ref-for-dfn-conforming-document-34">conforming document</a>. If it is
-not, set <var>result</var>.<var>status</var> to <code>false</code>, remove the
-<var>document</var> property from <var>result</var>, and add at least
-one <a href="#MALFORMED_VALUE_ERROR">MALFORMED_VALUE_ERROR</a> to
-<var>result</var>.<var>errors</var>. Other warnings and errors <em class="rfc2119">MAY</em> be included
-to aid any debugging process.
+<var>result</var>.<var>status</var>가 <code>true</code>로 설정되어 있으면
+<var>result</var>.<var>document</var>가 <a data-link-type="dfn|abstract-op" href="#dfn-conforming-document" class="internalDFN" id="ref-for-dfn-conforming-document-34">적합 문서</a>인지 확인한다.
+그렇지 않으면 <var>result</var>.<var>status</var>를 <code>false</code>로 설정하고,
+<var>result</var>에서 <var>document</var> 속성을 제거하며,
+<var>result</var>.<var>errors</var>에 최소한 하나의
+<a href="#MALFORMED_VALUE_ERROR">MALFORMED_VALUE_ERROR</a>를 추가한다. 디버깅
+과정을 돕기 위해 다른 경고와 오류를 포함<em class="rfc2119">할 수 있다</em>.
           </li>
           <li>
-Return <var>result</var>.
+<var>result</var>를 반환한다.
           </li>
         </ol>
 
         <p>
-The steps for verifying the state of the securing mechanism and verifying
-that the input document is a <a data-link-type="dfn|abstract-op" href="#dfn-conforming-document" class="internalDFN" id="ref-for-dfn-conforming-document-35">conforming document</a> <em class="rfc2119">MAY</em> be performed in
-a different order than that provided above as long as the
-implementation returns errors for the same invalid inputs.
-Implementations <em class="rfc2119">MAY</em> produce different errors than described above.
+보안 메커니즘의 상태를 검증하는 단계와 입력 문서가
+<a data-link-type="dfn|abstract-op" href="#dfn-conforming-document" class="internalDFN" id="ref-for-dfn-conforming-document-35">적합 문서</a>인지 검증하는 단계는, 구현이 동일한 유효하지
+않은 입력에 대해 오류를 반환하기만 한다면 위에 제시된 것과 다른 순서로 수행<em class="rfc2119">할 수 있다</em>.
+구현은 위에 기술된 것과 다른 오류를 발생시킬 수 <em class="rfc2119">있다</em>.
         </p>
 
       </section>
 
-      <section id="problem-details"><div class="header-wrapper"><h3 id="x7-2-problem-details"><bdi class="secno">7.2 </bdi>Problem Details</h3><a class="self-link" href="#problem-details" aria-label="Permalink for Section 7.2"></a></div>
+      <section id="problem-details"><div class="header-wrapper"><h3 id="x7-2-problem-details"><bdi class="secno">7.2 </bdi>문제 세부 정보</h3><a class="self-link" href="#problem-details" aria-label="Permalink for Section 7.2"></a></div>
         
 
         <p>
-When an implementation detects an anomaly while processing a document, a
-<dfn id="dfn-problemdetails" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">ProblemDetails</dfn> object can be used to report the issue to other
-software systems. The interface for these objects follow [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc9457" title="Problem Details for HTTP APIs">RFC9457</a></cite>]
-to encode the data. A <a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-3">ProblemDetails</a> object consists of the following
-properties:
+구현이 문서를 처리하는 중 이상을 감지했을 때,
+<dfn id="dfn-problemdetails" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">ProblemDetails</dfn> 객체를 사용하여 그 문제를 다른
+소프트웨어 시스템에 보고할 수 있다. 이 객체들의 인터페이스는 데이터를 인코딩하기
+위해 [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc9457" title="Problem Details for HTTP APIs">RFC9457</a></cite>]을 따른다. <a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-3">ProblemDetails</a> 객체는 다음
+속성으로 구성된다.
         </p>
 
         <dl>
           <dt>type</dt>
           <dd>
-The <code>type</code> <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-75">property</a> <em class="rfc2119">MUST</em> be present and its value <em class="rfc2119">MUST</em> be a <a data-link-type="dfn|abstract-op" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-19">URL</a>
-identifying the type of problem.
+<code>type</code> <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-75">속성</a>은 존재<em class="rfc2119">해야 하며</em>, 그 값은
+문제의 유형을 식별하는 <a data-link-type="dfn|abstract-op" href="#dfn-url" class="internalDFN" id="ref-for-dfn-url-19">URL</a>이<em class="rfc2119">어야 한다</em>.
           </dd>
           <dt>title</dt>
           <dd>
-The <code>title</code> <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-76">property</a> <em class="rfc2119">SHOULD</em> provide a short
-but specific human-readable string for the problem.
+<code>title</code> <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-76">속성</a>은 그 문제에 대해 짧지만
+구체적인, 사람이 읽을 수 있는 문자열을 제공하는 것이 <em class="rfc2119">좋다</em>.
           </dd>
           <dt>detail</dt>
           <dd>
-The <code>detail</code> <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-77">property</a> <em class="rfc2119">SHOULD</em> provide a
-longer human-readable string for the problem.
+<code>detail</code> <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-77">속성</a>은 그 문제에 대해 더 긴,
+사람이 읽을 수 있는 문자열을 제공하는 것이 <em class="rfc2119">좋다</em>.
           </dd>
         </dl>
 
         <p>
-The following problem description types are defined by this specification:
+이 규격은 다음 문제 기술 유형을 정의한다.
         </p>
 
         <dl>
@@ -7950,41 +7951,39 @@ The following problem description types are defined by this specification:
 https://www.w3.org/TR/vc-data-model#PARSING_ERROR
           </dt>
           <dd>
-There was an error while parsing input.
+입력을 파싱하는 중 오류가 있었다.
           </dd>
           <dt id="CRYPTOGRAPHIC_SECURITY_ERROR">
 https://www.w3.org/TR/vc-data-model#CRYPTOGRAPHIC_SECURITY_ERROR
           </dt>
           <dd>
-The securing mechanism for the document has detected a
-modification in the contents of the document since it was created;
-potential tampering detected. See Section
-<a href="#verification" data-matched-text="[[[#verification]]]" class="sec-ref"><bdi class="secno">7.1 </bdi>Verification</a>.
+그 문서의 보안 메커니즘이 문서가 생성된 이후 문서 내용의 수정을 감지했다. 잠재적
+변조가 감지되었다. <a href="#verification" data-matched-text="[[[#verification]]]" class="sec-ref"><bdi class="secno">7.1 </bdi>검증</a> 절을 참조한다.
           </dd>
           <dt id="MALFORMED_VALUE_ERROR">
 https://www.w3.org/TR/vc-data-model#MALFORMED_VALUE_ERROR
           </dt>
           <dd>
-The value associated with a particular <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-78">property</a> is malformed. The
-name of the <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-79">property</a> and the path to the property <em class="rfc2119">SHOULD</em> be provided
-in the <a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-4">ProblemDetails</a> object. See Section
-<a href="#verification" data-matched-text="[[[#verification]]]" class="sec-ref"><bdi class="secno">7.1 </bdi>Verification</a>.
+특정 <a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-78">속성</a>과 연관된 값의 형식이 잘못되었다. 그
+<a data-link-type="dfn|abstract-op" href="#dfn-property" class="internalDFN" id="ref-for-dfn-property-79">속성</a>의 이름과 그 속성으로의 경로를
+<a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-4">ProblemDetails</a> 객체에 제공하는 것이 <em class="rfc2119">좋다</em>.
+<a href="#verification" data-matched-text="[[[#verification]]]" class="sec-ref"><bdi class="secno">7.1 </bdi>검증</a> 절을 참조한다.
           </dd>
           <dt id="RANGE_ERROR">
 https://www.w3.org/TR/vc-data-model#RANGE_ERROR
           </dt>
           <dd>
-A provided value is outside of the expected range of an associated value,
-such as a given index value for an array being larger than the current size
-of the array.
+배열에 주어진 인덱스 값이 그 배열의 현재 크기보다 큰 경우처럼, 제공된 값이 연관된
+값의 기대 범위를 벗어났다.
           </dd>
         </dl>
 
         <p>
-Implementations <em class="rfc2119">MAY</em> extend the <a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-5">ProblemDetails</a> object by specifying
-additional types or properties. See the
-<a href="https://www.rfc-editor.org/rfc/rfc9457#name-extension-members">Extension Member</a> section
-in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc9457" title="Problem Details for HTTP APIs">RFC9457</a></cite>] for further guidance on using this mechanism.
+구현은 추가 유형이나 속성을 명시하여 <a data-link-type="dfn|abstract-op" href="#dfn-problemdetails" class="internalDFN" id="ref-for-dfn-problemdetails-5">ProblemDetails</a> 객체를
+확장<em class="rfc2119">할 수 있다</em>. 이 메커니즘 사용에 대한 자세한 지침은
+[<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc9457" title="Problem Details for HTTP APIs">RFC9457</a></cite>]의
+<a href="https://www.rfc-editor.org/rfc/rfc9457#name-extension-members">Extension Member</a>
+절을 참조한다.
         </p>
 
       </section>
